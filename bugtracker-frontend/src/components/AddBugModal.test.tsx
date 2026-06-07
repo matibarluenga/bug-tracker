@@ -65,7 +65,7 @@ describe("AddBugModal", () => {
 
     await userEvent.type(titleInput, "New Bug");
     await userEvent.type(descriptionInput, "New Description");
-    await userEvent.selectOptions(prioritySelect, "LowXXX");
+    await userEvent.selectOptions(prioritySelect, "Low");
 
     expect(titleInput).toHaveValue("New Bug");
     expect(descriptionInput).toHaveValue("New Description");
