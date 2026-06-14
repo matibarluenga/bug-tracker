@@ -46,8 +46,8 @@ pipeline {
                         docker {
                             image 'node:20-alpine'
                             reuseNode true
-                            }
-                            }
+                        }
+                    }
                     steps{
                         dir('bugtracker-frontend') {
                             sh '''
@@ -69,8 +69,8 @@ pipeline {
                         }
                     }
                 }
-                    }
-                }
+            }
+        }
         
         stage('Launch Application'){
             agent {
@@ -158,6 +158,7 @@ pipeline {
                         reportName: 'K6 Performance Test Results'
                     ]
                 }
+            }
         }
     }
     post {
