@@ -153,7 +153,7 @@ pipeline {
             post {
                 always {
                     publishHTML target: [
-                        reportDir: 'tests-perfor',
+                        reportDir: 'tests-perf',
                         reportFiles: 'perf-results.html',
                         reportName: 'K6 Performance Test Results'
                     ]
